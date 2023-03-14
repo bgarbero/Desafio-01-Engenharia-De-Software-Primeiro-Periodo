@@ -38,6 +38,20 @@ Inicio
             escreval("Voto em branco - número 1")
             escreval("Para votar nulo tecle qualquer número exceto as opções acima.")
             leia(prefeito)
+            escolha prefeito
+            caso 90
+               limpatela
+               escreval("Você votou no candidato Herbet.")
+            caso 95
+               limpatela
+               escreval("Você votou no candidato Ribeiro.")
+            caso 1
+               limpatela
+               escreval("Voto em branco.")
+            outrocaso
+               limpatela
+               escreval("Voto nulo.")
+            fimescolha
             escreval("Aperte C para confirmar o seu voto e R regressar.")
             leia(confirmaPrefeito)
          ate (confirmaPrefeito = "c")
@@ -45,19 +59,15 @@ Inicio
          escolha prefeito
          caso 90
             herbert <- herbert + 1
-            escreval("Você votou no candidato Herbet.")
             prefeito <- 0
          caso 95
             ribeiro <- ribeiro + 1
-            escreval("Você votou no candidato Ribeiro.")
             prefeito <- 0
          caso 1
             brancoPrefeito <- brancoPrefeito + 1
-            escreval("Voto em branco.")
             prefeito <- 0
          outrocaso
             nuloPrefeito <- nuloPrefeito + 1
-            escreval("Voto nulo.")
             prefeito <- 0
          fimescolha
          //votação de vereador
@@ -71,6 +81,26 @@ Inicio
             escreval("Voto em branco - número 1")
             escreval("Para votar nulo tecle qualquer número exceto as opções acima.")
             leia(vereador)
+            escolha vereador
+            caso 90000
+               limpatela
+               escreval("Você votou no candidato Barone.")
+            caso 90999
+               limpatela
+               escreval("Você votou no candidato Bidu.")
+            caso 95000
+               limpatela
+               escreval("Você votou no candidato Monteiro.")
+            caso 95999
+               limpatela
+               escreval("Você votou no candidato João Fera.")
+            caso 1
+               limpatela
+               escreval("Voto em branco.")
+            outrocaso
+               limpatela
+               escreval("Voto nulo.")
+            fimescolha
             escreval("Aperte C para confirmar o seu voto e R regressar.")
             leia(confirmaVereador)
          ate (confirmaVereador = "c")
