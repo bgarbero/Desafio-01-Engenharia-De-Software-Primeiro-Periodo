@@ -12,7 +12,7 @@ Var
 
 Inicio
 
-
+   //laço da senha
    repita
       limpatela
       escreval("Digite a senha para iniciar a votação:")
