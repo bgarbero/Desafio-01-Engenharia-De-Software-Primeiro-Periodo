@@ -137,34 +137,7 @@ Inicio
       fimse
       //adulteração da urna
    ate (iniciaEncerra = 0)
-   //atribuição de votos em branco para prefeito
-   se (herbert > ribeiro) entao
-      herbert <- herbert + brancoPrefeito
-   senao
-      se (herbert < ribeiro) entao
-         ribeiro <- ribeiro + brancoPrefeito
-      senao
-         vazio <- brancoPrefeito
-      fimse
-   fimse
-   //atribuição de votos em branco para vereador
-   se (barone > bidu) e (barone > monteiro) e (barone > joaoFera) entao
-      barone <- barone + brancoVereador
-   senao
-      se (bidu > barone) e (bidu > monteiro) e (bidu > joaoFera) entao
-         bidu <- bidu + brancoVereador
-      senao
-         se (monteiro > barone) e (monteiro > bidu) e (monteiro > joaoFera) entao
-            monteiro <- monteiro + brancoVereador
-         senao
-            se (joaoFera > barone) e (joaoFera > bidu) e (joaoFera > monteiro) entao
-               joaoFera <- joaoFera + brancoVereador
-            senao
-               vazio <- brancoVereador
-            fimse
-         fimse
-      fimse
-   fimse
+
    //total de votos em branco e nulo
    brancoTotal <- brancoPrefeito + brancoVereador
    nuloTotal <- nuloPrefeito + nuloVereador
@@ -212,21 +185,7 @@ Inicio
             se (joaoFera > barone) e (joaoFera > monteiro) e (joaoFera > bidu) entao
                escreval("O candidato a vereador mais votado é o candidato João Fera.")
             senao
-               se (barone = bidu) ou (barone = monteiro) ou (barone = joaoFera) entao
-                  escreval("Haverá segundo turno para vereador.")
-               senao
-                  se (bidu = barone) ou (bidu = monteiro) ou (bidu = joaoFera) entao
-                     escreval("Haverá segundo turno para vereador.")
-                  senao
-                     se (monteiro = barone) ou (monteiro = bidu) ou (monteiro = joaoFera) entao
-                        escreval("Haverá segundo turno para vereador.")
-                     senao
-                        se (joaoFera = barone) ou (joaoFera = monteiro) ou (joaoFera = bidu) entao
-                           escreval("Haverá segundo turno para vereador.")
-                        fimse
-                     fimse
-                  fimse
-               fimse
+               escreval("Houve empate nas eleições de vereador.")
             fimse
          fimse
       fimse
