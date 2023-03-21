@@ -1,4 +1,4 @@
-# Desafio da urna eletrônica
+# Desafio da urna eletrônica no VisuAlg
 O sistema deverá ter as seguintes funcionalidades mínimas:
 
 1.1) Primeiramente para se iniciar o programa deverá ser informada uma senha de acesso, cuja senha será: 2411. Enquanto esta senha não for digitada corretamente o sistema não poderá ser inicializado;
